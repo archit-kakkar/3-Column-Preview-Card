@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* heading, content & image */
+    .heading {
+        color: hsl(0, 0%, 95%);
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        text-transform: uppercase;    
+        padding-bottom: 20px;
+    }
+
+    .content {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: .9rem;
+        line-height: 2;
+    }
+   
+    .image {
+        padding-top: 45px;
+        padding-bottom: 35px;
+    }
+
+/* All Sections */
+    .image, .heading, .content {
+        padding-right: 60px;
+        padding-left: 32.5px;
+    }
+
+    .sedan-button, .suv-button, .luxury-button {
+        background-color: #fff;
+        border: 0;
+        border-radius: 5vw;
+        margin: 50px 40px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 12.5px 35px;
+    }
+
+    .sedan-button:hover , .suv-button:hover , .luxury-button:hover {
+        background-color: rgb(236, 234, 234);
+    }
+
+    .row {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+/* Sedan Section */
+    .sedan {
+        background-color: hsl(31, 77%, 52%);
+        margin-left: 12.5vw;
+        border-top-left-radius: 1.2vw;
+        border-bottom-left-radius: 1.2vw;
+    }
+
+/* SUV Section */
+    .suv {
+        background-color: hsl(184, 100%, 22%);
+    }
+
+/* Luxury Section */
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 1.2vw;
+        border-bottom-right-radius: 1.2vw;
+    }
+
+/* Buttons */
+    .sedan-button, .sedan-button:hover {
+        color: hsl(31, 77%, 52%);
+    }
+
+    .suv-button, .suv-button:hover {
+        color: hsl(184, 100%, 22%);
+    }
+
+    .luxury-button, .luxury-button:hover {
+        color: hsl(179, 100%, 13%);
+    }
+
+/* Media Queries */
+    @media (max-width: 992px) {
+        
+        .sedan, .suv, .luxury {
+            margin-left: 17vw;
+            margin-right: 17vw;
+        }
+
+        .sedan {
+            border-radius: 0;
+            border-top-right-radius: 1.2vw;
+            border-top-left-radius: 1.2vw;
+        }
+
+        .luxury {
+            border-radius: 0;
+            border-bottom-right-radius: 1.2vw;
+            border-bottom-left-radius: 1.2vw;
+        }
+
+        .sedan-button, .suv-button, .luxury-button {
+            margin-top: 10px;
+        }
+
+    }
